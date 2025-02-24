@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    width: 100%;
+    max-height: 1000px;
+    text-align: center;
+    padding:  60px;
+    background-image: url(assets/img/kaiju-no-8.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+header {
+   display: inline;
+   padding: 0;
+    
+    
+}
+.jumbotron h1 {
+    color: red;
+    font-size: 100px;
+}
+h1, h2 {
+    color: #088488;
+
+}
+
+nav {
+    background-color: #088488;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: white;
+}
+main {
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+    color: black;
+    padding: 20px;
+    font-size: larger;
+    border-bottom: 2px solid #088488;
+    display: flex;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+/* kontak*/
+
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 500px;
+    border: 5px solid #088488;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+.feature-image {
+    width: 300px;
+    border: 5px solid #088488;
+    border-radius: 8px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: aqua;
+    padding: 10px;
+    font-weight: bold;
+}
+aside {
+    flex: 2;
+    text-align: center;
+}
+.profile img {
+    width: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+   
+}
+
+@media screen and (max-width: 768px){
+    nav ul {
+        justify-content: center;
+
+    }
+
+    main aside{
+        align-self: stretch;
+    }
+
+}
+
+
